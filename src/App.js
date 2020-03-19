@@ -11,12 +11,14 @@ import CreateUser from './components/create-user.component';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <br/>
-      <Route exact path="/" component={ExercisesList}/>
-      <Route path="/edit/:id" component={EditExercises}/>
-      <Route path="/create" component={CreateExercise}/>
-      <Route path="/user" component={CreateUser}/>
+      <div className="container">
+        <Navbar />
+        <br/>
+        <Route exact path="/" component={ExercisesList}/>
+        <Route path="/edit/:id" component={EditExercises}/>
+        <Route path="/create" component={CreateExercise}/>
+        <Route path="/user" component={CreateUser}/>
+      </div>
     </Router>
   );
 }
